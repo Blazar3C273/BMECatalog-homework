@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE BMECAT SYSTEM "bmecat_new_catalog_1_2.dtd">
+<BMECAT version="1.2">
+    <HEADER>
+        <GENERATOR_INFO>created by bcg.pl</GENERATOR_INFO>
+        <CATALOG>
+            <LANGUAGE>deu</LANGUAGE>
+            <CATALOG_ID>SWK</CATALOG_ID>
+            <CATALOG_VERSION>1.00</CATALOG_VERSION>
+            <CATALOG_NAME>EBERO Katalog 2012</CATALOG_NAME>
+            <DATETIME type="generation_date">
+                <DATE>2012-05-10</DATE>
+                <TIME>12:51:25</TIME>
+            </DATETIME>
+            <CURRENCY>EUR</CURRENCY>
+            <MIME_ROOT>/images</MIME_ROOT>
+            <PRICE_FLAG type="incl_freight">true</PRICE_FLAG>
+            <PRICE_FLAG type="incl_packing">true</PRICE_FLAG>
+        </CATALOG>
+        <SUPPLIER>
+            <SUPPLIER_ID type="duns">31-666-2592</SUPPLIER_ID>
+            <SUPPLIER_NAME>EBERO</SUPPLIER_NAME>
+            <ADDRESS type="supplier">
+                <NAME>EBERO Vertretungs- und Vertriebs-GmbH &amp; Co KG</NAME>
+                <NAME2></NAME2>
+                <CONTACT>Dirk Sommer</CONTACT>
+                <STREET>August-Euler-Straße 3</STREET>
+                <ZIP>50259</ZIP>
+                <CITY>Pulheim</CITY>
+                <COUNTRY>Germany</COUNTRY>
+                <PHONE>+49 2238 96 52 90</PHONE>
+                <FAX>+49 2238 96 52 99</FAX>
+                <EMAIL>info@ebero.com</EMAIL>
+                <URL>http://www.ebero.com</URL>
+            </ADDRESS>
+        </SUPPLIER>
+    </HEADER>
+    <T_NEW_CATALOG>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>132111946810</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Handrad-Set-2 1 mit Befestigungsmaterial DN 100 / 150, 315 mm, 19 mm Vierkant
+                </DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Handrad-Set-2 mit Befestigungsmaterial DN 100 / 150, 315 mm, 19 mm Vierkant
+                    Kunstharzlack, Schraube + Scheibe aus VA
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_AID>2-28-01206-000</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>VAG-Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>2</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010191</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>17.98</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                    <LOWER_BOUND>1</LOWER_BOUND>
+                </ARTICLE_PRICE>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>15.20</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                    <LOWER_BOUND>100</LOWER_BOUND>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>133280090610</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>VAG BETA300 Schieber F4 DN 150, BL 210 mm, PN 16</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>VAG BETA300 Schieber F4 DN 150, BL 210 mm, PN 16 Epoxy, für Wasser</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>3-28-00906-100</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>VAG-Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010101</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>219.62</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>202490000506</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Stopfen ZAK 46 (1 1/2) mit Verdrehsicherung</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Stopfen ZAK 46 (1 1/2) mit Verdrehsicherung</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>2490000506</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010291</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>10.48</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>204050401000</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>PE-Einschweiß-Schieber, Typ A, E2 DN 32, PE-Enden d 40, SDR 11</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>PE-Einschweiß-Schieber, Typ A, E2 DN 32, PE-Enden d 40, SDR 11 GGG 400, für Wasser,
+                </DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">15213</BUYER_AID>
+                <MANUFACTURER_AID>4050401000</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010101</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>106.72</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>tn_40500f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>PE-Einschweiß-Schieber, Typ A, E2 DN 32, PE-Enden d 40, SDR 11</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>40500f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>PE-Einschweiß-Schieber, Typ A, E2 DN 32, PE-Enden d 40, SDR 11</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>2</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>204050501000</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>PE-Einschweiß-Schieber, Typ A, E2 DN 40, PE-Enden d 50, SDR 11</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>PE-Einschweiß-Schieber, Typ A, E2 DN 40, PE-Enden d 50, SDR 11 GGG 400, für Wasser,
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_AID>4050501000</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010101</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>115.28</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>tn_40500f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>PE-Einschweiß-Schieber, Typ A, E2 DN 40, PE-Enden d 50, SDR 11</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>40500f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>PE-Einschweiß-Schieber, Typ A, E2 DN 40, PE-Enden d 50, SDR 11</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>2</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>204050631000</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>PE-Einschweiß-Schieber, Typ A, E2 DN 50, PE-Enden d 63, SDR 11</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>PE-Einschweiß-Schieber, Typ A, E2 DN 50, PE-Enden d 63, SDR 11 GGG 400, für Wasser
+                </DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">15214</BUYER_AID>
+                <MANUFACTURER_AID>4050632006</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010101</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>188.80</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>204110800000</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Tausch-Schieber, PN 16, GGG 40, E2 DN 80, EWS-Beschichtung</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Tausch-Schieber, PN 16, GGG 40, E2 DN 80, EWS-Beschichtung einschl.
+                    Zweikammerflansche,
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_AID>4110800001</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010101</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>270.24</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>tn_41100f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Tausch-Schieber, PN 16, GGG 40, E2 DN 80, EWS-Beschichtung</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>41100f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Tausch-Schieber, PN 16, GGG 40, E2 DN 80, EWS-Beschichtung</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>2</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>204111000000</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Tausch-Schieber, PN 16, GGG 40, E2 DN 100, EWS-Beschichtung</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Tausch-Schieber, PN 16, GGG 40, E2 DN 100, EWS-Beschichtung einschl.
+                    Zweikammerflansche,
+                </DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">16511</BUYER_AID>
+                <MANUFACTURER_AID>4111000001</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010101</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>325.84</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>tn_41100f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Tausch-Schieber, PN 16, GGG 40, E2 DN 100, EWS-Beschichtung</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>41100f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Tausch-Schieber, PN 16, GGG 40, E2 DN 100, EWS-Beschichtung</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>2</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>204112000060</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Tausch-Schieber, PN 16, GGG 40, E2 DN 200, EWS-Beschichtung</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Tausch-Schieber, PN 16, GGG 40, E2 DN 200, EWS-Beschichtung einschl.
+                    Zweikammerflansche,
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_AID>4112000061</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010101</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>836.48</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>tn_41100f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Tausch-Schieber, PN 16, GGG 40, E2 DN 200, EWS-Beschichtung</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>41100f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Tausch-Schieber, PN 16, GGG 40, E2 DN 200, EWS-Beschichtung</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>2</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>205280801000</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Zugsicherung Hawle-Stop DN 80 / d 90, für PE-Rohr</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Zugsicherung Hawle-Stop DN 80 / d 90, für PE-Rohr GGG 40, EWS-beschichtet
+                </DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">15221</BUYER_AID>
+                <MANUFACTURER_AID>5280801000</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010291</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>29.12</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>tn_528c0f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Zugsicherung Hawle-Stop DN 80 / d 90, für PE-Rohr</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>528c0f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Zugsicherung Hawle-Stop DN 80 / d 90, für PE-Rohr</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>2</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>205290000900</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>GKS-Guß-Kunststoff-Dichtung -TW- DN 80 / d 90</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>GKS-Guß-Kunststoff-Dichtung -TW- DN 80 / d 90 für PVC-/PE-Rohre PN 16, 529 K für
+                    Trinkwasser mit blauer Markierung
+                </DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">15221</BUYER_AID>
+                <MANUFACTURER_AID>5290000900</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010291</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>2.72</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>205491002460</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>EN-Stück mit Flansch / BAIO-Verbindung DN 80, BAIO DN 100, PN 16, 2 x ZAK 46
+                </DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>EN-Stück mit Flansch / BAIO-Verbindung DN 80, BAIO DN 100, PN 16, 2 x ZAK 46
+                    EWS-beschichtet
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_AID>5491002460</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37030290</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>119.20</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>205900900001</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Stützhülse V2A d 90, SDR 17 - 17,6</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Stützhülse V2A d 90, SDR 17 - 17,6 für PE-Rohre</DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">15221</BUYER_AID>
+                <MANUFACTURER_AID>5900900001</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Hawle Armaturen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37069190</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>13.28</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>tn_59000f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Stützhülse V2A d 90, SDR 17 - 17,6</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>59000f.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Stützhülse V2A d 90, SDR 17 - 17,6</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>2</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>250000399831</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>EWE-WZ-Schacht für QN 2,5 Rd. 1,00 m, Anschluß d 32 (1&quot;)</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>EWE-WZ-Schacht für QN 2,5 Rd. 1,00 m, Anschluß d 32 (1&quot;) incl. EWE-Wasserzähler
+                    Anlage
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_AID>0399831</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Wilhelm Ewe GmbH &amp; Co. KG</MANUFACTURER_NAME>
+                <DELIVERY_TIME>30</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>27200410</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>537.21</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>337093852230</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Multi-Joint Endkappe PLUS, Typ 3207 DN 100 / d 104 - 132 mm, zugfest, NBR
+                </DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Multi-Joint Endkappe PLUS, Typ 3207 DN 100 / d 104 - 132 mm, zugfest, NBR mit 2&quot;-IG-Abgang,
+                    VA-Schrauben
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_NAME>FAB</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>22360807</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>183.24</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>337093852330</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Multi-Joint Endkappe PLUS, Typ 3207 DN 150 / d 154 - 192 mm, zugfest, NBR
+                </DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Multi-Joint Endkappe PLUS, Typ 3207 DN 150 / d 154 - 192 mm, zugfest, NBR mit 2&quot;-IG-Abgang,
+                    VA-Schrauben
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_NAME>FAB</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>22360807</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>355.97</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>351801000400</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Plasson Kupplung d 40 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Plasson Kupplung d 40 mm Typ 18010</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>180100040</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>infralogistik ruhr GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>5</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37060701</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>11.74</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>351801000500</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Plasson Kupplung d 50 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Plasson Kupplung d 50 mm Typ 18010</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>180100050</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>infralogistik ruhr GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>5</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37060701</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>15.91</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>351801000630</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Plasson Kupplung d 63 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Plasson Kupplung d 63 mm Typ 18010</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>180100063</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>infralogistik ruhr GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>5</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37060701</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>22.13</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>351804000630</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Plasson T-Stück 90 Grad, egal d 63 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Plasson T-Stück 90 Grad, egal d 63 mm Typ 18040</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>180400063</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>infralogistik ruhr GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>5</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37060706</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>30.83</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>351805000400</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Plasson Winkel 90 Grad d 40 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Plasson Winkel 90 Grad d 40 mm Typ 18050</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>180500040</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>infralogistik ruhr GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>5</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37060704</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>11.74</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>351805000500</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Plasson Winkel 90 Grad d 50 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Plasson Winkel 90 Grad d 50 mm Typ 18050</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>180500050</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>infralogistik ruhr GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>5</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37060704</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>15.91</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>351805000630</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Plasson Winkel 90 Grad d 63 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Plasson Winkel 90 Grad d 63 mm Typ 18050</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>180500063</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>infralogistik ruhr GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>5</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37060704</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>22.13</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>353400063040</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Plasson T-Stück 90 Grad, red. d 63 x 40 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Plasson T-Stück 90 Grad, red. d 63 x 40 mm Typ 18340</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>183400063040</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>infralogistik ruhr GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>5</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37060506</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>30.83</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>353400063050</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Plasson T-Stück 90 Grad, red. d 63 x 50 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Plasson T-Stück 90 Grad, red. d 63 x 50 mm Typ 18340</DESCRIPTION_LONG>
+                <MANUFACTURER_AID>183400063050</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>infralogistik ruhr GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>5</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37060506</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>30.83</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>512130200100</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Anbohrschelle, 3-teilig, DN 200, Flanschabgang DN 100</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Anbohrschelle, 3-teilig, DN 200, Flanschabgang DN 100 für Guß-/Stahl-/PVC-/AZ-Rohre
+                    Ebero-Art.-Bez.: EBE 2130
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_AID>100200100 S100</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>R.C. Mannesmann Armaturen Vert</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010201</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>351.76</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>513130080050</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Anbohrschelle, 3-teilig, DN 80, mit 2&quot;IG</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Anbohrschelle, 3-teilig, DN 80, mit 2&quot;IG für Guß-/Stahl-/PVC-/AZ-Rohre
+                    Ebero-Art.-Bez.: EBE 3130
+                </DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">794</BUYER_AID>
+                <MANUFACTURER_AID>4043611-012006</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Melcher + Frenzen GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>37010201</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>146.65</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>528062100087</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Dichtschelle 3-teilig DN 100 x 2&quot;, AD 108 - 128 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Dichtschelle 3-teilig DN 100 x 2&quot;, AD 108 - 128 mm</DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">795</BUYER_AID>
+                <MANUFACTURER_NAME>R.C. Mannesmann Armaturen Vert</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>23149101</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>132.89</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>637830100001</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Güpo Lecksuchspray Dose à 500 ml</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Güpo Lecksuchspray Dose à 500 ml</DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">1483</BUYER_AID>
+                <MANUFACTURER_AID>301</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>GÜPO GmbH Chemie und Technik</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>30040101</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>CA</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>CA</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>1.90</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>651206172500</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Verschlusslaschen WPCP-IV WPCP-IV-6X17K(S25)</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Verschlusslaschen WPCP-IV WPCP-IV-6X17K(S25)</DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">984</BUYER_AID>
+                <MANUFACTURER_AID>337749-001</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Berry Plastics BVBA</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>27149104</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>6.50</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>652630017100</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Thermofit WPC-C30 WPC-C30-17X100-RL</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Thermofit WPC-C30 WPC-C30-17X100-RL Korrosionsschutz von Schweißnähten (Rolle à 30
+                    m)
+                </DESCRIPTION_LONG>
+                <BUYER_AID type="buyer_specific">566</BUYER_AID>
+                <MANUFACTURER_AID>068777-000</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Berry Plastics BVBA</MANUFACTURER_NAME>
+                <DELIVERY_TIME>1</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>27149104</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>RO</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>RO</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>406.15</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>980024702150</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Muffen-Überschieber SMU-R DN 150, 168,3 x 159,0, PN 16, BL 500 mm</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Muffen-Überschieber SMU-R DN 150, 168,3 x 159,0, PN 16, BL 500 mm DIN 2470
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_AID>SMUR168159500</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>Franz Schuck GmbH</MANUFACTURER_NAME>
+                <DELIVERY_TIME>30</DELIVERY_TIME>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>ECLASS-5.1</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>22360605</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <CONTENT_UNIT>C62</CONTENT_UNIT>
+                <NO_CU_PER_OU>1</NO_CU_PER_OU>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2012-06-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2013-05-31</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>81.20</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>nopic.jpg</MIME_SOURCE>
+                    <MIME_DESCR>Leider keine Produktabbildung vorhanden</MIME_DESCR>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+        </ARTICLE>
+    </T_NEW_CATALOG>
+</BMECAT>
