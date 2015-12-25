@@ -8,6 +8,9 @@
 
 package tk.hackspace.dtd.gen;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -26,6 +29,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "value"
 })
 @XmlRootElement(name = "PUBLIC_KEY")
+@Entity
 public class PublicKey {
 
     @XmlAttribute(name = "type", required = true)
@@ -33,6 +37,12 @@ public class PublicKey {
     protected String type;
     @XmlValue
     protected String value;
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    public PublicKey() {
+    }
 
     /**
      * Gets the value of the type property.
@@ -74,4 +84,11 @@ public class PublicKey {
         this.value = value;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

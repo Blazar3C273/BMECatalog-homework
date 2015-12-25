@@ -8,12 +8,11 @@
 
 package tk.hackspace.dtd.gen;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.IdClass;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.NormalizedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
@@ -27,6 +26,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "tnewcatalog"
 })
 @XmlRootElement(name = "BMECAT")
+
 public class BMEcat {
 
     @XmlAttribute(name = "version")
@@ -40,6 +40,8 @@ public class BMEcat {
     @XmlElement(name = "T_NEW_CATALOG", required = true)
     protected TNewCatalog tnewcatalog;
 
+    @XmlAttribute(required = false)
+    private Long id;
     /**
      * Gets the value of the version property.
      *
@@ -128,4 +130,25 @@ public class BMEcat {
         this.tnewcatalog = value;
     }
 
+    public BMEcat() {
+    }
+
+    @Override
+    public String toString() {
+        return "BMEcat{" +
+                "version='" + version + '\'' +
+                ", xmlns='" + xmlns + '\'' +
+                ", header=" + header +
+                ", tnewcatalog=" + tnewcatalog +
+                ", id=" + id +
+                '}';
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

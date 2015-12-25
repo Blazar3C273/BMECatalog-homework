@@ -10,6 +10,10 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.IdClass;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -32,6 +36,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "articletocataloggroupmap"
 })
 @XmlRootElement(name = "T_NEW_CATALOG")
+
 public class TNewCatalog {
 
     @XmlAttribute(name = "prev_version")
@@ -47,6 +52,12 @@ public class TNewCatalog {
     protected List<Article> article;
     @XmlElement(name = "ARTICLE_TO_CATALOGGROUP_MAP")
     protected List<ArticleToCatalogGroupMap> articletocataloggroupmap;
+
+    @XmlAttribute(required = false)
+    private Long id;
+
+    public TNewCatalog() {
+    }
 
     /**
      * Gets the value of the prevVersion property.
@@ -80,7 +91,7 @@ public class TNewCatalog {
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getFEATURESYSTEM().add(newItem);
+     *    getFeatureSystem().add(newItem);
      * </pre>
      * <p>
      * <p>
@@ -88,7 +99,7 @@ public class TNewCatalog {
      * Objects of the following type(s) are allowed in the list
      * {@link FeatureSystem }
      */
-    public List<FeatureSystem> getFEATURESYSTEM() {
+    public List<FeatureSystem> getFeatureSystem() {
         if (featuresystem == null) {
             featuresystem = new ArrayList<FeatureSystem>();
         }
@@ -107,7 +118,7 @@ public class TNewCatalog {
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getCLASSIFICATIONSYSTEM().add(newItem);
+     *    getClassificationSystem().add(newItem);
      * </pre>
      * <p>
      * <p>
@@ -115,7 +126,7 @@ public class TNewCatalog {
      * Objects of the following type(s) are allowed in the list
      * {@link ClassificationSystem }
      */
-    public List<ClassificationSystem> getCLASSIFICATIONSYSTEM() {
+    public List<ClassificationSystem> getClassificationSystem() {
         if (classificationsystem == null) {
             classificationsystem = new ArrayList<ClassificationSystem>();
         }
@@ -128,7 +139,7 @@ public class TNewCatalog {
      * @return possible object is
      * {@link CatalogGroupSystem }
      */
-    public CatalogGroupSystem getCATALOGGROUPSYSTEM() {
+    public CatalogGroupSystem getCatalogGroupSystem() {
         return cataloggroupsystem;
     }
 
@@ -138,7 +149,7 @@ public class TNewCatalog {
      * @param value allowed object is
      *              {@link CatalogGroupSystem }
      */
-    public void setCATALOGGROUPSYSTEM(CatalogGroupSystem value) {
+    public void setCatalogGroupSystem(CatalogGroupSystem value) {
         this.cataloggroupsystem = value;
     }
 
@@ -154,7 +165,7 @@ public class TNewCatalog {
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getARTICLE().add(newItem);
+     *    getArticle().add(newItem);
      * </pre>
      * <p>
      * <p>
@@ -162,7 +173,7 @@ public class TNewCatalog {
      * Objects of the following type(s) are allowed in the list
      * {@link Article }
      */
-    public List<Article> getARTICLE() {
+    public List<Article> getArticle() {
         if (article == null) {
             article = new ArrayList<Article>();
         }
@@ -181,7 +192,7 @@ public class TNewCatalog {
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getARTICLETOCATALOGGROUPMAP().add(newItem);
+     *    getArticleToCatalogGroupMap().add(newItem);
      * </pre>
      * <p>
      * <p>
@@ -189,11 +200,31 @@ public class TNewCatalog {
      * Objects of the following type(s) are allowed in the list
      * {@link ArticleToCatalogGroupMap }
      */
-    public List<ArticleToCatalogGroupMap> getARTICLETOCATALOGGROUPMAP() {
+    public List<ArticleToCatalogGroupMap> getArticleToCatalogGroupMap() {
         if (articletocataloggroupmap == null) {
             articletocataloggroupmap = new ArrayList<ArticleToCatalogGroupMap>();
         }
         return this.articletocataloggroupmap;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "TNewCatalog{" +
+                "prevVersion='" + prevVersion + '\'' +
+                ", featuresystem=" + featuresystem +
+                ", classificationsystem=" + classificationsystem +
+                ", cataloggroupsystem=" + cataloggroupsystem +
+                ", article=" + article +
+                ", articletocataloggroupmap=" + articletocataloggroupmap +
+                ", id=" + id +
+                '}';
+    }
 }

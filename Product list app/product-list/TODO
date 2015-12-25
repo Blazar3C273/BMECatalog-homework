@@ -1,0 +1,41 @@
+//TODO viewing obj via page
+//TODO reading object from db
+//TODO saving xml's to db
+//TODO loading xml's to server
+//TODO checking incoming xml
+//TODO make view page
+//TODO make upload page
+//TODO web application
+//TODO make some simple page
+//TODO prototyping view
+
+//TODO view some simple object from db and put it back
+
+ Supplier
+ Catalog of products xml
+ See the list of products
+ Upload xml
+ page to upload the xml
+ page to view the products, filter-able per supplier
+ basic but usable interface
+ xmls can be very large (> 1M) (нагрузочное тестирование)
+ ORM
+ H2
+ supplier can only upload new catalogs / products that overrides the existing ones
+ product may have more ARTICLE_PRICE and more MIME
+ ///-------------------------
+ Unit tests
+ Spring Boot
+
+ page > post file > server parce > jpa
+ page > get > server > jpa
+ jpa > page
+
+org.springframework.beans.factory.UnsatisfiedDependencyException:
+Error creating bean with name 'tk.hackspace.ProductListApplication$RepositoryCommandLineRunner':
+Unsatisfied dependency expressed through constructor argument with index 1 of type [tk.hackspace.ProductListApplication$DumbProductRepository]:
+No qualifying bean of type [tk.hackspace.ProductListApplication$DumbProductRepository] found for dependency:
+expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {};
+nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException:
+No qualifying bean of type [tk.hackspace.ProductListApplication$DumbProductRepository] found for dependency:
+expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependeny annotations: {}

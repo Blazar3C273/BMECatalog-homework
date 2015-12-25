@@ -10,6 +10,11 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -44,6 +49,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "addressremarks"
 })
 @XmlRootElement(name = "ADDRESS")
+@Entity
 public class Address {
 
     @XmlAttribute(name = "type", required = true)
@@ -78,12 +84,20 @@ public class Address {
     @XmlElement(name = "EMAIL")
     protected String email;
     @XmlElement(name = "PUBLIC_KEY")
+    @ManyToMany
     protected List<PublicKey> publickey;
     @XmlElement(name = "URL")
     protected String url;
     @XmlElement(name = "ADDRESS_REMARKS")
     protected String addressremarks;
 
+    @Id
+    @GeneratedValue
+    private Long address_id;
+
+    public Address() {
+
+    }
     /**
      * Gets the value of the type property.
      *
@@ -451,4 +465,11 @@ public class Address {
         this.addressremarks = value;
     }
 
+    public Long getAddress_id() {
+        return address_id;
+    }
+
+    public void setAddress_id(Long address_id) {
+        this.address_id = address_id;
+    }
 }
