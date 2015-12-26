@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import tk.hackspace.AddressRepository;
+import tk.hackspace.AgreementRepo;
 import tk.hackspace.Faa;
 import tk.hackspace.ProductListApplication;
+import tk.hackspace.dtd.gen.Agreement;
 import tk.hackspace.dtd.gen.ObjectFactory;
 
 import java.util.ArrayList;
@@ -23,7 +25,8 @@ public class AddressEntityTests {
 
     @Autowired
     private AddressRepository fooRepository;
-
+    @Autowired
+    private AgreementRepo agreementRepo;
     @Test
     public void testName() throws Exception {
         fooRepository.save(new ObjectFactory().createADDRESS());
@@ -38,4 +41,14 @@ public class AddressEntityTests {
                     add(new Faa(rnd.nextInt(), "" + rnd.nextInt()));
                 }};
     }
+
+    @Test
+    public void testAgreementEntitiesJpaSaveLoad() throws Exception {
+        Agreement agreement = new ObjectFactory().createAGREEMENT();
+        agreement.setAGREEMENTID("asonueth");
+        agreementRepo.save(agreement);
+        agreementRepo.findAll().forEach(System.out::println);
+    }
+
+    ;
 }

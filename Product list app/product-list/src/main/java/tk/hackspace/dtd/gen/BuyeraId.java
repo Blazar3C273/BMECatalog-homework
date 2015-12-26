@@ -8,6 +8,8 @@
 
 package tk.hackspace.dtd.gen;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -31,6 +33,7 @@ public class BuyeraId {
     @XmlAttribute(name = "type", required = true)
     @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
     protected String type;
+    @Id
     @XmlValue
     protected String value;
 

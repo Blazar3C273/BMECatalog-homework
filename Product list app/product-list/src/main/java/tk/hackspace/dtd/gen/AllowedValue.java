@@ -8,6 +8,8 @@
 
 package tk.hackspace.dtd.gen;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -25,14 +27,18 @@ import javax.xml.bind.annotation.XmlType;
         "allowedvaluedescr"
 })
 @XmlRootElement(name = "ALLOWED_VALUE")
+@Entity
 public class AllowedValue {
-
+    @Id
     @XmlElement(name = "ALLOWED_VALUE_ID", required = true)
     protected String allowedvalueid;
     @XmlElement(name = "ALLOWED_VALUE_NAME", required = true)
     protected String allowedvaluename;
     @XmlElement(name = "ALLOWED_VALUE_DESCR")
     protected String allowedvaluedescr;
+
+    public AllowedValue() {
+    }
 
     /**
      * Gets the value of the allowedvalueid property.

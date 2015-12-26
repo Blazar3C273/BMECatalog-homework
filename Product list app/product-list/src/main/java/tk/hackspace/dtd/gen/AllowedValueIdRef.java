@@ -8,6 +8,7 @@
 
 package tk.hackspace.dtd.gen;
 
+import javax.persistence.Entity;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -25,9 +26,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlType(name = "", propOrder = {
         "value"
 })
+@Entity
 @XmlRootElement(name = "ALLOWED_VALUE_IDREF")
 public class AllowedValueIdRef {
-
     @XmlAttribute(name = "order")
     @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
     protected String order;

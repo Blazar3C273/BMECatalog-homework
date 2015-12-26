@@ -10,12 +10,8 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
@@ -36,25 +32,36 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 })
 @XmlRootElement(name = "ARTICLE")
 public class Article {
+    public Article() {
+    }
 
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long article_id;
     @XmlAttribute(name = "mode")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String mode;
+    @JoinColumn(name = "SUPPLIER_AID")
     @XmlElement(name = "SUPPLIER_AID", required = true)
     protected String supplieraid;
     @XmlElement(name = "ARTICLE_DETAILS", required = true)
+    @OneToOne
     protected ArticleDetails articledetails;
     @XmlElement(name = "ARTICLE_FEATURES")
+    @OneToMany
     protected List<ArticleFeatures> articlefeatures;
     @XmlElement(name = "ARTICLE_ORDER_DETAILS", required = true)
     protected ArticleOrderDetails ArticleOrderDetails;
     @XmlElement(name = "ARTICLE_PRICE_DETAILS", required = true)
+    @OneToMany
     protected List<ArticlePriceDetails> articlepricedetails;
     @XmlElement(name = "MIME_INFO")
     protected MimeInfo mimeinfo;
     @XmlElement(name = "USER_DEFINED_EXTENSIONS")
     protected String userdefinedextensions;
     @XmlElement(name = "ARTICLE_REFERENCE")
+    @OneToMany
     protected List<ArticleReference> articlereference;
 
     /**
@@ -262,4 +269,11 @@ public class Article {
         return this.articlereference;
     }
 
+    public Long getArticle_id() {
+        return article_id;
+    }
+
+    public void setArticle_id(Long article_id) {
+        this.article_id = article_id;
+    }
 }

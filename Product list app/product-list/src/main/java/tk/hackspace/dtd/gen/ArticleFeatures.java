@@ -10,6 +10,8 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -36,8 +38,10 @@ public class ArticleFeatures {
             @XmlElement(name = "REFERENCE_FEATURE_GROUP_ID", type = ReferenceFeatureGroupId.class),
             @XmlElement(name = "REFERENCE_FEATURE_GROUP_NAME", type = ReferenceFeatureGroupName.class)
     })
+    @OneToMany
     protected List<Object> referencefeaturegroupidOrREFERENCEFEATUREGROUPNAME;
     @XmlElement(name = "FEATURE")
+    @ManyToMany
     protected List<Feature> feature;
 
     /**

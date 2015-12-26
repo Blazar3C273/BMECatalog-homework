@@ -8,12 +8,10 @@
 
 package tk.hackspace.dtd.gen;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
@@ -28,8 +26,15 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "timezone"
 })
 @XmlRootElement(name = "DATETIME")
+@Entity
 public class DateTime {
+    public DateTime() {
+    }
 
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
     @XmlAttribute(name = "type", required = true)
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String type;
@@ -120,4 +125,11 @@ public class DateTime {
         this.timezone = value;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

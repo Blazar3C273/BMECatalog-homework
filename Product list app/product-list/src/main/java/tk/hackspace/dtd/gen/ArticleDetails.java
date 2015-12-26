@@ -10,11 +10,10 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -42,7 +41,13 @@ import javax.xml.bind.annotation.XmlType;
 })
 @XmlRootElement(name = "ARTICLE_DETAILS")
 public class ArticleDetails {
+    public ArticleDetails() {
+    }
 
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long articleDetailsID;
     @XmlElement(name = "DESCRIPTION_SHORT", required = true)
     protected String descriptionshort;
     @XmlElement(name = "DESCRIPTION_LONG")
@@ -51,6 +56,7 @@ public class ArticleDetails {
     protected String ean;
     @XmlElement(name = "SUPPLIER_ALT_AID")
     protected String supplieraltaid;
+    @OneToMany
     @XmlElement(name = "BUYER_AID")
     protected List<BuyeraId> buyeraid;
     @XmlElement(name = "MANUFACTURER_AID")
@@ -65,9 +71,11 @@ public class ArticleDetails {
     protected String erpgroupsupplier;
     @XmlElement(name = "DELIVERY_TIME")
     protected String deliverytime;
+    @OneToMany
     @XmlElement(name = "SPECIAL_TREATMENT_CLASS")
     protected List<SpecialTreatmentClass> specialtreatmentclass;
     @XmlElement(name = "KEYWORD")
+    @OneToMany
     protected List<Keyword> keyword;
     @XmlElement(name = "REMARKS")
     protected String remarks;
@@ -446,4 +454,11 @@ public class ArticleDetails {
         return this.articlestatus;
     }
 
+    public Long getArticleDetailsID() {
+        return articleDetailsID;
+    }
+
+    public void setArticleDetailsID(Long articleDetailsID) {
+        this.articleDetailsID = articleDetailsID;
+    }
 }

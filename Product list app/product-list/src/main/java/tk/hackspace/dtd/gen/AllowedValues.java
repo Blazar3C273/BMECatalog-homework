@@ -10,11 +10,11 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -25,10 +25,18 @@ import javax.xml.bind.annotation.XmlType;
         "allowedvalue"
 })
 @XmlRootElement(name = "ALLOWED_VALUES")
+@Entity
 public class AllowedValues {
-
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
+    @OneToMany
     @XmlElement(name = "ALLOWED_VALUE", required = true)
     protected List<AllowedValue> allowedvalue;
+
+    public AllowedValues() {
+    }
 
     /**
      * Gets the value of the allowedvalue property.
@@ -57,4 +65,11 @@ public class AllowedValues {
         return this.allowedvalue;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
