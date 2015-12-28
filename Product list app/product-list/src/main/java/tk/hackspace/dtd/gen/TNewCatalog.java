@@ -8,18 +8,12 @@
 
 package tk.hackspace.dtd.gen;
 
+import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.IdClass;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.NormalizedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
@@ -29,128 +23,38 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-        "featuresystem",
-        "classificationsystem",
-        "cataloggroupsystem",
-        "article",
-        "articletocataloggroupmap"
+        "article"
 })
 @XmlRootElement(name = "T_NEW_CATALOG")
-
+@Entity
 public class TNewCatalog {
 
-    @XmlAttribute(name = "prev_version")
-    @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
-    protected String prevVersion;
-    @XmlElement(name = "FEATURE_SYSTEM")
-    protected List<FeatureSystem> featuresystem;
-    @XmlElement(name = "CLASSIFICATION_SYSTEM")
-    protected List<ClassificationSystem> classificationsystem;
-    @XmlElement(name = "CATALOG_GROUP_SYSTEM")
-    protected CatalogGroupSystem cataloggroupsystem;
-    @XmlElement(name = "ARTICLE")
-    protected List<Article> article;
-    @XmlElement(name = "ARTICLE_TO_CATALOGGROUP_MAP")
-    protected List<ArticleToCatalogGroupMap> articletocataloggroupmap;
+    public void setArticle(List<Article> article) {
+        //article.forEach(article1 -> article1.setCatId());
+        Logger.getLogger(TNewCatalog.class).info("set Article is invoked.");
+        this.article = article;
 
-    @XmlAttribute(required = false)
+    }
+
+    @XmlElement(name = "ARTICLE")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    protected List<Article> article;
+
+    @Id
+    @GeneratedValue
+    @XmlTransient
     private Long id;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+
     public TNewCatalog() {
-    }
-
-    /**
-     * Gets the value of the prevVersion property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getPrevVersion() {
-        return prevVersion;
-    }
-
-    /**
-     * Sets the value of the prevVersion property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setPrevVersion(String value) {
-        this.prevVersion = value;
-    }
-
-    /**
-     * Gets the value of the featuresystem property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the featuresystem property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getFeatureSystem().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link FeatureSystem }
-     */
-    public List<FeatureSystem> getFeatureSystem() {
-        if (featuresystem == null) {
-            featuresystem = new ArrayList<FeatureSystem>();
-        }
-        return this.featuresystem;
-    }
-
-    /**
-     * Gets the value of the classificationsystem property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the classificationsystem property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getClassificationSystem().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ClassificationSystem }
-     */
-    public List<ClassificationSystem> getClassificationSystem() {
-        if (classificationsystem == null) {
-            classificationsystem = new ArrayList<ClassificationSystem>();
-        }
-        return this.classificationsystem;
-    }
-
-    /**
-     * Gets the value of the cataloggroupsystem property.
-     *
-     * @return possible object is
-     * {@link CatalogGroupSystem }
-     */
-    public CatalogGroupSystem getCatalogGroupSystem() {
-        return cataloggroupsystem;
-    }
-
-    /**
-     * Sets the value of the cataloggroupsystem property.
-     *
-     * @param value allowed object is
-     *              {@link CatalogGroupSystem }
-     */
-    public void setCatalogGroupSystem(CatalogGroupSystem value) {
-        this.cataloggroupsystem = value;
     }
 
     /**
@@ -180,50 +84,11 @@ public class TNewCatalog {
         return this.article;
     }
 
-    /**
-     * Gets the value of the articletocataloggroupmap property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the articletocataloggroupmap property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getArticleToCatalogGroupMap().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ArticleToCatalogGroupMap }
-     */
-    public List<ArticleToCatalogGroupMap> getArticleToCatalogGroupMap() {
-        if (articletocataloggroupmap == null) {
-            articletocataloggroupmap = new ArrayList<ArticleToCatalogGroupMap>();
-        }
-        return this.articletocataloggroupmap;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     @Override
     public String toString() {
         return "TNewCatalog{" +
-                "prevVersion='" + prevVersion + '\'' +
-                ", featuresystem=" + featuresystem +
-                ", classificationsystem=" + classificationsystem +
-                ", cataloggroupsystem=" + cataloggroupsystem +
                 ", article=" + article +
-                ", articletocataloggroupmap=" + articletocataloggroupmap +
                 ", id=" + id +
                 '}';
     }

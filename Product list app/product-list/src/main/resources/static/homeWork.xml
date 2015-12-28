@@ -19,7 +19,7 @@
         <SUPPLIER>
             <SUPPLIER_ID type="duns">31-666-2592</SUPPLIER_ID>
             <SUPPLIER_NAME>EBERO</SUPPLIER_NAME>
-            <ADDRESS type="supplier">
+            <ADDRESS type="testSupplier">
                 <NAME>EBERO Vertretungs- und Vertriebs-GmbH &amp; Co KG</NAME>
                 <NAME2></NAME2>
                 <CONTACT>Dirk Sommer</CONTACT>

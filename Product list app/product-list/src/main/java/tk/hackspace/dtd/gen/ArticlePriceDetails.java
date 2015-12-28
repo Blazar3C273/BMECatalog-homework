@@ -10,11 +10,8 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -27,14 +24,32 @@ import javax.xml.bind.annotation.XmlType;
         "articleprice"
 })
 @XmlRootElement(name = "ARTICLE_PRICE_DETAILS")
+@Entity
 public class ArticlePriceDetails {
-
     @XmlElement(name = "DATETIME")
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     protected List<DateTime> datetime;
     @XmlElement(name = "DAILY_PRICE")
     protected String dailyprice;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @XmlElement(name = "ARTICLE_PRICE", required = true)
     protected List<ArticlePrice> articleprice;
+
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public ArticlePriceDetails() {
+    }
 
     /**
      * Gets the value of the datetime property.

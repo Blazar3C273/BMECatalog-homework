@@ -8,10 +8,7 @@
 
 package tk.hackspace.dtd.gen;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.IdClass;
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.NormalizedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -26,7 +23,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "tnewcatalog"
 })
 @XmlRootElement(name = "BMECAT")
-
+@Entity
 public class BMEcat {
 
     @XmlAttribute(name = "version")
@@ -36,11 +33,15 @@ public class BMEcat {
     @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
     protected String xmlns;
     @XmlElement(name = "HEADER", required = true)
-    protected Header header;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Header header;
     @XmlElement(name = "T_NEW_CATALOG", required = true)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     protected TNewCatalog tnewcatalog;
 
-    @XmlAttribute(required = false)
+    @Id
+    @GeneratedValue
+    @XmlTransient
     private Long id;
     /**
      * Gets the value of the version property.
@@ -107,7 +108,9 @@ public class BMEcat {
      *              {@link Header }
      */
     public void setHEADER(Header value) {
+
         this.header = value;
+
     }
 
     /**
@@ -151,4 +154,5 @@ public class BMEcat {
     public void setId(Long id) {
         this.id = id;
     }
+
 }

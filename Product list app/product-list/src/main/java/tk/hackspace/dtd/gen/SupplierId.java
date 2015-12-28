@@ -8,12 +8,10 @@
 
 package tk.hackspace.dtd.gen;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlValue;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
@@ -26,6 +24,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "value"
 })
 @XmlRootElement(name = "SUPPLIER_ID")
+@Entity
 public class SupplierId {
 
     @XmlAttribute(name = "type", required = true)
@@ -33,6 +32,22 @@ public class SupplierId {
     protected String type;
     @XmlValue
     protected String value;
+
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public SupplierId() {
+    }
 
     /**
      * Gets the value of the type property.

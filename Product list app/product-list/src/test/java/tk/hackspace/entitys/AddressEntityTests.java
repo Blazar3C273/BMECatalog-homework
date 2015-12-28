@@ -6,11 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import tk.hackspace.AddressRepository;
-import tk.hackspace.AgreementRepo;
+
 import tk.hackspace.Faa;
 import tk.hackspace.ProductListApplication;
-import tk.hackspace.dtd.gen.Agreement;
+import tk.hackspace.dtd.gen.repos.BMECatRepository;
 import tk.hackspace.dtd.gen.ObjectFactory;
+import tk.hackspace.jpa.test.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,11 +27,32 @@ public class AddressEntityTests {
     @Autowired
     private AddressRepository fooRepository;
     @Autowired
-    private AgreementRepo agreementRepo;
+    private BMECatRepo bmeCatRepo;
+    @Autowired
+    private BMECatRepository bmeCatRepository;
     @Test
     public void testName() throws Exception {
         fooRepository.save(new ObjectFactory().createADDRESS());
         fooRepository.findAll().forEach(System.out::println);
+    }
+
+    @Test
+    public void testRealBMECatJPA() throws Exception {
+
+
+    }
+
+    @Test
+    public void testJPA() throws Exception {
+        ArrayList<TestBMECat> testBmeCats = TestBMECat.boilSomeBMECat(2);
+        bmeCatRepo.save(testBmeCats);
+        bmeCatRepo.findAll().forEach(System.out::println);
+        TestHeader testHeader = testBmeCats.get(0).getTestHeader();
+        testHeader.setGeneratorinfo("Scrillex");
+        testBmeCats.get(0).setTestHeader(testHeader);
+        bmeCatRepo.save(testBmeCats.get(0));
+        bmeCatRepo.findAll().forEach(System.out::println);
+
     }
 
     private List<Faa> getFaa(Random rnd) {
@@ -41,14 +63,4 @@ public class AddressEntityTests {
                     add(new Faa(rnd.nextInt(), "" + rnd.nextInt()));
                 }};
     }
-
-    @Test
-    public void testAgreementEntitiesJpaSaveLoad() throws Exception {
-        Agreement agreement = new ObjectFactory().createAGREEMENT();
-        agreement.setAGREEMENTID("asonueth");
-        agreementRepo.save(agreement);
-        agreementRepo.findAll().forEach(System.out::println);
-    }
-
-    ;
 }

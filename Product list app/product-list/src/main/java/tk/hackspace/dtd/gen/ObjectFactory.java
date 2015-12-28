@@ -34,12 +34,6 @@ public class ObjectFactory {
     public ObjectFactory() {
     }
 
-    /**
-     * Create an instance of {@link Territory }
-     */
-    public Territory createTERRITORY() {
-        return new Territory();
-    }
 
     /**
      * Create an instance of {@link ArticleOrderDetails }
@@ -48,12 +42,6 @@ public class ObjectFactory {
         return new ArticleOrderDetails();
     }
 
-    /**
-     * Create an instance of {@link ClassificationSystemFeatureTemplate }
-     */
-    public ClassificationSystemFeatureTemplate createCLASSIFICATIONSYSTEMFEATURETEMPLATE() {
-        return new ClassificationSystemFeatureTemplate();
-    }
 
     /**
      * Create an instance of {@link ArticleDetails }
@@ -118,110 +106,7 @@ public class ObjectFactory {
         return new PriceFlag();
     }
 
-    /**
-     * Create an instance of {@link ArticleToCatalogGroupMap }
-     */
-    public ArticleToCatalogGroupMap createARTICLETOCATALOGGROUPMAP() {
-        return new ArticleToCatalogGroupMap();
-    }
 
-    /**
-     * Create an instance of {@link BuyerId }
-     */
-    public BuyerId createBUYERID() {
-        return new BuyerId();
-    }
-
-    /**
-     * Create an instance of {@link ClassificationSystemLevelName }
-     */
-    public ClassificationSystemLevelName createCLASSIFICATIONSYSTEMLEVELNAME() {
-        return new ClassificationSystemLevelName();
-    }
-
-    /**
-     * Create an instance of {@link AllowedValues }
-     */
-    public AllowedValues createALLOWEDVALUES() {
-        return new AllowedValues();
-    }
-
-    /**
-     * Create an instance of {@link AllowedValue }
-     */
-    public AllowedValue createALLOWEDVALUE() {
-        return new AllowedValue();
-    }
-
-    /**
-     * Create an instance of {@link ClassificationGroup }
-     */
-    public ClassificationGroup createCLASSIFICATIONGROUP() {
-        return new ClassificationGroup();
-    }
-
-    /**
-     * Create an instance of {@link ClassificationGroupSynonyms }
-     */
-    public ClassificationGroupSynonyms createCLASSIFICATIONGROUPSYNONYMS() {
-        return new ClassificationGroupSynonyms();
-    }
-
-    /**
-     * Create an instance of {@link ClassificationGroupFeatureTemplates }
-     */
-    public ClassificationGroupFeatureTemplates createCLASSIFICATIONGROUPFEATURETEMPLATES() {
-        return new ClassificationGroupFeatureTemplates();
-    }
-
-    /**
-     * Create an instance of {@link AllowedValueIdRef }
-     */
-    public AllowedValueIdRef createALLOWEDVALUEIDREF() {
-        return new AllowedValueIdRef();
-    }
-
-    /**
-     * Create an instance of {@link ArticlePrice }
-     */
-    public ArticlePrice createARTICLEPRICE() {
-        return new ArticlePrice();
-    }
-
-    /**
-     * Create an instance of {@link FTallowedValues }
-     */
-    public FTallowedValues createFTALLOWEDVALUES() {
-        return new FTallowedValues();
-    }
-
-    /**
-     * Create an instance of {@link Synonym }
-     */
-    public Synonym createSYNONYM() {
-        return new Synonym();
-    }
-
-    /**
-     * Create an instance of {@link ArticlePriceDetails }
-     */
-    public ArticlePriceDetails createARTICLEPRICEDETAILS() {
-        return new ArticlePriceDetails();
-    }
-
-    /**
-     * Create an instance of {@link FeatureGroup }
-     */
-    public FeatureGroup createFEATUREGROUP() {
-        return new FeatureGroup();
-    }
-
-    /**
-     * Create an instance of {@link FeatureTemplate }
-     */
-    public FeatureTemplate createFEATURETEMPLATE() {
-        return new FeatureTemplate();
-    }
 
     /**
      * Create an instance of {@link SupplierId }
@@ -237,19 +122,7 @@ public class ObjectFactory {
         return new Header();
     }
 
-    /**
-     * Create an instance of {@link Buyer }
-     */
-    public Buyer createBUYER() {
-        return new Buyer();
-    }
 
-    /**
-     * Create an instance of {@link Agreement }
-     */
-    public Agreement createAGREEMENT() {
-        return new Agreement();
-    }
 
     /**
      * Create an instance of {@link Supplier }
@@ -272,68 +145,7 @@ public class ObjectFactory {
         return new MimeInfo();
     }
 
-    /**
-     * Create an instance of {@link CatalogStructure }
-     */
-    public CatalogStructure createCATALOGSTRUCTURE() {
-        return new CatalogStructure();
-    }
 
-    /**
-     * Create an instance of {@link ClassificationSystem }
-     */
-    public ClassificationSystem createCLASSIFICATIONSYSTEM() {
-        return new ClassificationSystem();
-    }
-
-    /**
-     * Create an instance of {@link ClassificationSystemLevelNames }
-     */
-    public ClassificationSystemLevelNames createCLASSIFICATIONSYSTEMLEVELNAMES() {
-        return new ClassificationSystemLevelNames();
-    }
-
-    /**
-     * Create an instance of {@link Units }
-     */
-    public Units createUNITS() {
-        return new Units();
-    }
-
-    /**
-     * Create an instance of {@link ClassificationSystemFeatureTemplates }
-     */
-    public ClassificationSystemFeatureTemplates createCLASSIFICATIONSYSTEMFEATURETEMPLATES() {
-        return new ClassificationSystemFeatureTemplates();
-    }
-
-    /**
-     * Create an instance of {@link ClassificationGroups }
-     */
-    public ClassificationGroups createCLASSIFICATIONGROUPS() {
-        return new ClassificationGroups();
-    }
-
-    /**
-     * Create an instance of {@link FeatureSystem }
-     */
-    public FeatureSystem createFEATURESYSTEM() {
-        return new FeatureSystem();
-    }
-
-    /**
-     * Create an instance of {@link FValue }
-     */
-    public FValue createFVALUE() {
-        return new FValue();
-    }
-
-    /**
-     * Create an instance of {@link Variant }
-     */
-    public Variant createVARIANT() {
-        return new Variant();
-    }
 
     /**
      * Create an instance of {@link ReferenceFeatureGroupId }
@@ -342,46 +154,12 @@ public class ObjectFactory {
         return new ReferenceFeatureGroupId();
     }
 
-    /**
-     * Create an instance of {@link Unit }
-     */
-    public Unit createUNIT() {
-        return new Unit();
-    }
-
-    /**
-     * Create an instance of {@link Variants }
-     */
-    public Variants createVARIANTS() {
-        return new Variants();
-    }
 
     /**
      * Create an instance of {@link PublicKey }
      */
     public PublicKey createPUBLICKEY() {
         return new PublicKey();
-    }
-
-    /**
-     * Create an instance of {@link Feature }
-     */
-    public Feature createFEATURE() {
-        return new Feature();
-    }
-
-    /**
-     * Create an instance of {@link CatalogGroupSystem }
-     */
-    public CatalogGroupSystem createCATALOGGROUPSYSTEM() {
-        return new CatalogGroupSystem();
-    }
-
-    /**
-     * Create an instance of {@link ClassificationGroupFeatureTemplate }
-     */
-    public ClassificationGroupFeatureTemplate createCLASSIFICATIONGROUPFEATURETEMPLATE() {
-        return new ClassificationGroupFeatureTemplate();
     }
 
     /**
@@ -417,13 +195,6 @@ public class ObjectFactory {
      */
     public Article createARTICLE() {
         return new Article();
-    }
-
-    /**
-     * Create an instance of {@link ArticleReference }
-     */
-    public ArticleReference createARTICLEREFERENCE() {
-        return new ArticleReference();
     }
 
 }

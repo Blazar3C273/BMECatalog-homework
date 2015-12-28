@@ -8,11 +8,10 @@
 
 package tk.hackspace.dtd.gen;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -28,8 +27,8 @@ import javax.xml.bind.annotation.XmlType;
         "quantityinterval"
 })
 @XmlRootElement(name = "ARTICLE_ORDER_DETAILS")
+@Entity
 public class ArticleOrderDetails {
-
     @XmlElement(name = "ORDER_UNIT", required = true)
     protected String orderunit;
     @XmlElement(name = "CONTENT_UNIT")
@@ -42,6 +41,22 @@ public class ArticleOrderDetails {
     protected String quantitymin;
     @XmlElement(name = "QUANTITY_INTERVAL")
     protected String quantityinterval;
+
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public ArticleOrderDetails() {
+    }
 
     /**
      * Gets the value of the orderunit property.

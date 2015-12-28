@@ -10,11 +10,8 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -24,26 +21,29 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
         "generatorinfo",
         "catalog",
-        "buyer",
-        "agreement",
         "supplier",
-        "userdefinedextensions"
+
 })
 @XmlRootElement(name = "HEADER")
+@Entity
+@Table(name = "T_HEADER")
 public class Header {
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long headerId;
 
     @XmlElement(name = "GENERATOR_INFO")
     protected String generatorinfo;
     @XmlElement(name = "CATALOG", required = true)
+    @OneToOne(cascade = CascadeType.ALL)
     protected Catalog catalog;
-    @XmlElement(name = "BUYER")
-    protected Buyer buyer;
-    @XmlElement(name = "AGREEMENT")
-    protected List<Agreement> agreement;
     @XmlElement(name = "SUPPLIER", required = true)
+    @OneToOne(cascade = CascadeType.ALL)
     protected Supplier supplier;
-    @XmlElement(name = "USER_DEFINED_EXTENSIONS")
-    protected String userdefinedextensions;
+
+    public Header() {
+    }
 
     /**
      * Gets the value of the generatorinfo property.
@@ -85,55 +85,11 @@ public class Header {
         this.catalog = value;
     }
 
-    /**
-     * Gets the value of the buyer property.
-     *
-     * @return possible object is
-     * {@link Buyer }
-     */
-    public Buyer getBUYER() {
-        return buyer;
-    }
+
+
 
     /**
-     * Sets the value of the buyer property.
-     *
-     * @param value allowed object is
-     *              {@link Buyer }
-     */
-    public void setBUYER(Buyer value) {
-        this.buyer = value;
-    }
-
-    /**
-     * Gets the value of the agreement property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the agreement property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAGREEMENT().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Agreement }
-     */
-    public List<Agreement> getAGREEMENT() {
-        if (agreement == null) {
-            agreement = new ArrayList<Agreement>();
-        }
-        return this.agreement;
-    }
-
-    /**
-     * Gets the value of the supplier property.
+     * Gets the value of the testSupplier property.
      *
      * @return possible object is
      * {@link Supplier }
@@ -143,7 +99,7 @@ public class Header {
     }
 
     /**
-     * Sets the value of the supplier property.
+     * Sets the value of the testSupplier property.
      *
      * @param value allowed object is
      *              {@link Supplier }
@@ -152,24 +108,12 @@ public class Header {
         this.supplier = value;
     }
 
-    /**
-     * Gets the value of the userdefinedextensions property.
-     *
-     * @return possible object is
-     * {@link String }
-     */
-    public String getUSERDEFINEDEXTENSIONS() {
-        return userdefinedextensions;
+
+    public Long getHeaderId() {
+        return headerId;
     }
 
-    /**
-     * Sets the value of the userdefinedextensions property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setUSERDEFINEDEXTENSIONS(String value) {
-        this.userdefinedextensions = value;
+    public void setHeaderId(Long headerId) {
+        this.headerId = headerId;
     }
-
 }

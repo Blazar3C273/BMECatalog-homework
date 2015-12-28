@@ -10,11 +10,8 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -27,12 +24,12 @@ import javax.xml.bind.annotation.XmlType;
         "catalogversion",
         "catalogname",
         "datetime",
-        "territory",
         "currency",
         "mimeroot",
         "priceflag"
 })
 @XmlRootElement(name = "CATALOG")
+@Entity
 public class Catalog {
 
     @XmlElement(name = "LANGUAGE", required = true)
@@ -43,16 +40,32 @@ public class Catalog {
     protected String catalogversion;
     @XmlElement(name = "CATALOG_NAME")
     protected String catalogname;
+    @ManyToOne(cascade = CascadeType.ALL)
     @XmlElement(name = "DATETIME")
     protected DateTime datetime;
-    @XmlElement(name = "TERRITORY")
-    protected List<Territory> territory;
     @XmlElement(name = "CURRENCY")
     protected String currency;
     @XmlElement(name = "MIME_ROOT")
     protected String mimeroot;
     @XmlElement(name = "PRICE_FLAG")
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     protected List<PriceFlag> priceflag;
+
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Catalog() {
+    }
 
     /**
      * Gets the value of the language property.
@@ -152,33 +165,6 @@ public class Catalog {
      */
     public void setDATETIME(DateTime value) {
         this.datetime = value;
-    }
-
-    /**
-     * Gets the value of the territory property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the territory property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTERRITORY().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Territory }
-     */
-    public List<Territory> getTERRITORY() {
-        if (territory == null) {
-            territory = new ArrayList<Territory>();
-        }
-        return this.territory;
     }
 
     /**

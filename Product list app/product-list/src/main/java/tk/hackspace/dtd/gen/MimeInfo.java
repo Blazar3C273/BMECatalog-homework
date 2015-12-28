@@ -10,11 +10,8 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -25,10 +22,28 @@ import javax.xml.bind.annotation.XmlType;
         "mime"
 })
 @XmlRootElement(name = "MIME_INFO")
+@Entity
 public class MimeInfo {
 
     @XmlElement(name = "MIME", required = true)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     protected List<Mime> mime;
+
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public MimeInfo() {
+    }
 
     /**
      * Gets the value of the mime property.

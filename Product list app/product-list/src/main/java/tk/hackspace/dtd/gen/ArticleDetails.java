@@ -10,9 +10,7 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 
 
@@ -40,13 +38,14 @@ import javax.xml.bind.annotation.*;
         "articlestatus"
 })
 @XmlRootElement(name = "ARTICLE_DETAILS")
+@Entity
 public class ArticleDetails {
     public ArticleDetails() {
     }
-
     @Id
     @GeneratedValue
     @XmlTransient
+    @Column(name = "ARTICLE_DETAILS_ID")
     private Long articleDetailsID;
     @XmlElement(name = "DESCRIPTION_SHORT", required = true)
     protected String descriptionshort;
@@ -56,7 +55,7 @@ public class ArticleDetails {
     protected String ean;
     @XmlElement(name = "SUPPLIER_ALT_AID")
     protected String supplieraltaid;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @XmlElement(name = "BUYER_AID")
     protected List<BuyeraId> buyeraid;
     @XmlElement(name = "MANUFACTURER_AID")
@@ -71,11 +70,11 @@ public class ArticleDetails {
     protected String erpgroupsupplier;
     @XmlElement(name = "DELIVERY_TIME")
     protected String deliverytime;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @XmlElement(name = "SPECIAL_TREATMENT_CLASS")
     protected List<SpecialTreatmentClass> specialtreatmentclass;
     @XmlElement(name = "KEYWORD")
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     protected List<Keyword> keyword;
     @XmlElement(name = "REMARKS")
     protected String remarks;
@@ -83,6 +82,7 @@ public class ArticleDetails {
     protected String segment;
     @XmlElement(name = "ARTICLE_ORDER")
     protected String articleorder;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @XmlElement(name = "ARTICLE_STATUS")
     protected List<ArticleStatus> articlestatus;
 

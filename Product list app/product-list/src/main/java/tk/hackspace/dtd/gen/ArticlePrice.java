@@ -10,12 +10,10 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.NormalizedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
@@ -30,9 +28,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "tax",
         "pricefactor",
         "lowerbound",
-        "territory"
 })
 @XmlRootElement(name = "ARTICLE_PRICE")
+@Entity
 public class ArticlePrice {
 
     @XmlAttribute(name = "price_type", required = true)
@@ -48,8 +46,22 @@ public class ArticlePrice {
     protected String pricefactor;
     @XmlElement(name = "LOWER_BOUND")
     protected String lowerbound;
-    @XmlElement(name = "TERRITORY")
-    protected List<Territory> territory;
+
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public ArticlePrice() {
+    }
 
     /**
      * Gets the value of the priceType property.
@@ -169,33 +181,6 @@ public class ArticlePrice {
      */
     public void setLOWERBOUND(String value) {
         this.lowerbound = value;
-    }
-
-    /**
-     * Gets the value of the territory property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the territory property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTERRITORY().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Territory }
-     */
-    public List<Territory> getTERRITORY() {
-        if (territory == null) {
-            territory = new ArrayList<Territory>();
-        }
-        return this.territory;
     }
 
 }

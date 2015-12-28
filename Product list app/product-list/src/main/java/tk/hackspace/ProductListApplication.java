@@ -4,15 +4,14 @@ package tk.hackspace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
+import tk.hackspace.dtd.gen.repos.BMECatRepository;
 import tk.hackspace.dtd.gen.BMEcat;
+import tk.hackspace.jpa.test.BMECatRepo;
+import tk.hackspace.jpa.test.TestBMECat;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
@@ -21,7 +20,10 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.FileInputStream;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Random;
 
 @SpringBootApplication
 public class ProductListApplication {
@@ -34,16 +36,30 @@ public class ProductListApplication {
     @Component
     class FooComandLineRunner implements CommandLineRunner {
         private final FooRepository fooRepository;
+        @Autowired
+        private BMECatRepository bmeCatRepository;
+        @Autowired
+        private BMECatRepo repo;
 
         @Override
         public void run(String... strings) throws Exception {
-            Random rnd = new Random();
+            repo.save(TestBMECat.boilSomeBMECat(50));
+            SAXParserFactory spf = SAXParserFactory.newInstance();
+            SAXParser sp = spf.newSAXParser();
+            XMLReader xr = sp.getXMLReader();
+            JAXBContext jaxbContext = JAXBContext.newInstance(BMEcat.class);
+            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+            UnmarshallerHandler unmarshallerHandler = jaxbUnmarshaller.getUnmarshallerHandler();
+            xr.setContentHandler(unmarshallerHandler);
+            FileInputStream xmlStream = new FileInputStream(new File("/mnt/oldE/Projects/German Test Project/Product list app/product-list/src/main/resources/static/homeWork.xml"));
+            InputSource xmlSource = new InputSource(xmlStream);
+            xr.parse(xmlSource);
 
-            //Arrays.asList("Teddy", "Place 2b", "Bes", "Receptor").forEach(n -> fooRepository.save(new Foo(n, getFaa(rnd))));
+            BMEcat bmEcat = (BMEcat) unmarshallerHandler.getResult();
+            bmeCatRepository.save(bmEcat);
 
 
-            //fooRepository.findAll().forEach(System.out::println);
-
+            System.out.println("bmEcat = " + bmEcat);
         }
 
         private List<Faa> getFaa(Random rnd) {

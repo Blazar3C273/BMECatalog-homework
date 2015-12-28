@@ -27,10 +27,11 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "ArticleOrderDetails",
         "articlepricedetails",
         "mimeinfo",
-        "userdefinedextensions",
-        "articlereference"
+
+
 })
 @XmlRootElement(name = "ARTICLE")
+@Entity
 public class Article {
     public Article() {
     }
@@ -38,31 +39,29 @@ public class Article {
     @Id
     @GeneratedValue
     @XmlTransient
+    @Column(name = "ARTICLE_ID")
     private Long article_id;
     @XmlAttribute(name = "mode")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String mode;
-    @JoinColumn(name = "SUPPLIER_AID")
     @XmlElement(name = "SUPPLIER_AID", required = true)
     protected String supplieraid;
     @XmlElement(name = "ARTICLE_DETAILS", required = true)
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     protected ArticleDetails articledetails;
     @XmlElement(name = "ARTICLE_FEATURES")
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     protected List<ArticleFeatures> articlefeatures;
     @XmlElement(name = "ARTICLE_ORDER_DETAILS", required = true)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     protected ArticleOrderDetails ArticleOrderDetails;
     @XmlElement(name = "ARTICLE_PRICE_DETAILS", required = true)
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     protected List<ArticlePriceDetails> articlepricedetails;
     @XmlElement(name = "MIME_INFO")
+    @ManyToOne(cascade = CascadeType.ALL)
     protected MimeInfo mimeinfo;
-    @XmlElement(name = "USER_DEFINED_EXTENSIONS")
-    protected String userdefinedextensions;
-    @XmlElement(name = "ARTICLE_REFERENCE")
-    @OneToMany
-    protected List<ArticleReference> articlereference;
+
 
     /**
      * Gets the value of the mode property.
@@ -228,52 +227,28 @@ public class Article {
      * @return possible object is
      * {@link String }
      */
-    public String getUSERDEFINEDEXTENSIONS() {
-        return userdefinedextensions;
-    }
 
-    /**
-     * Sets the value of the userdefinedextensions property.
-     *
-     * @param value allowed object is
-     *              {@link String }
-     */
-    public void setUSERDEFINEDEXTENSIONS(String value) {
-        this.userdefinedextensions = value;
-    }
-
-    /**
-     * Gets the value of the articlereference property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the articlereference property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getARTICLEREFERENCE().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ArticleReference }
-     */
-    public List<ArticleReference> getARTICLEREFERENCE() {
-        if (articlereference == null) {
-            articlereference = new ArrayList<ArticleReference>();
-        }
-        return this.articlereference;
-    }
 
     public Long getArticle_id() {
         return article_id;
     }
 
+    @Override
+    public String toString() {
+        return "TestArticle{" +
+                "article_id=" + article_id +
+                ", mode='" + mode + '\'' +
+                ", supplieraid='" + supplieraid + '\'' +
+                ", articledetails=" + articledetails +
+                ", articlefeatures=" + articlefeatures +
+                ", ArticleOrderDetails=" + ArticleOrderDetails +
+                ", articlepricedetails=" + articlepricedetails +
+                ", mimeinfo=" + mimeinfo +
+                '}';
+    }
+
     public void setArticle_id(Long article_id) {
         this.article_id = article_id;
     }
+
 }

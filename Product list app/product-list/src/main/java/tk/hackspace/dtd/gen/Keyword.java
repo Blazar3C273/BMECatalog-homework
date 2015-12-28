@@ -8,11 +8,10 @@
 
 package tk.hackspace.dtd.gen;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlValue;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -23,10 +22,27 @@ import javax.xml.bind.annotation.XmlValue;
         "value"
 })
 @XmlRootElement(name = "KEYWORD")
+@Entity
 public class Keyword {
 
     @XmlValue
     protected String value;
+
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Keyword() {
+    }
 
     /**
      * Gets the value of the value property.

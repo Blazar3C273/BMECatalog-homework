@@ -10,11 +10,8 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -22,31 +19,51 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-        "supplierid",
-        "suppliername",
+        "supplierIds",
+        "supplierName",
         "address",
         "mimeinfo"
 })
 @XmlRootElement(name = "SUPPLIER")
+@Entity
 public class Supplier {
 
     @XmlElement(name = "SUPPLIER_ID")
-    protected List<SupplierId> supplierid;
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    protected List<SupplierId> supplierIds;
     @XmlElement(name = "SUPPLIER_NAME", required = true)
-    protected String suppliername;
+    protected String supplierName;
     @XmlElement(name = "ADDRESS")
+    @ManyToOne(cascade = CascadeType.ALL)
     protected Address address;
     @XmlElement(name = "MIME_INFO")
+    @ManyToOne(cascade = CascadeType.ALL)
     protected MimeInfo mimeinfo;
 
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Supplier() {
+    }
+
     /**
-     * Gets the value of the supplierid property.
+     * Gets the value of the supplierIds property.
      * <p>
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the supplierid property.
+     * This is why there is not a <CODE>set</CODE> method for the supplierIds property.
      * <p>
      * <p>
      * For example, to add a new item, do as follows:
@@ -60,30 +77,30 @@ public class Supplier {
      * {@link SupplierId }
      */
     public List<SupplierId> getSUPPLIERID() {
-        if (supplierid == null) {
-            supplierid = new ArrayList<SupplierId>();
+        if (supplierIds == null) {
+            supplierIds = new ArrayList<SupplierId>();
         }
-        return this.supplierid;
+        return this.supplierIds;
     }
 
     /**
-     * Gets the value of the suppliername property.
+     * Gets the value of the supplierName property.
      *
      * @return possible object is
      * {@link String }
      */
     public String getSUPPLIERNAME() {
-        return suppliername;
+        return supplierName;
     }
 
     /**
-     * Sets the value of the suppliername property.
+     * Sets the value of the supplierName property.
      *
      * @param value allowed object is
      *              {@link String }
      */
     public void setSUPPLIERNAME(String value) {
-        this.suppliername = value;
+        this.supplierName = value;
     }
 
     /**

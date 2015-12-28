@@ -11,10 +11,7 @@ package tk.hackspace.dtd.gen;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -79,7 +76,7 @@ public class Address {
     @XmlElement(name = "EMAIL")
     protected String email;
     @XmlElement(name = "PUBLIC_KEY")
-    @ManyToMany
+    @OneToMany(cascade = CascadeType.ALL)
     protected List<PublicKey> publickey;
     @XmlElement(name = "URL")
     protected String url;

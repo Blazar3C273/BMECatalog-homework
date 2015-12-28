@@ -10,14 +10,8 @@ package tk.hackspace.dtd.gen;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.*;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -26,23 +20,33 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
         "referencefeaturesystemname",
-        "referencefeaturegroupidOrREFERENCEFEATUREGROUPNAME",
-        "feature"
+        "referenceFeatureGroupId"
 })
-@XmlRootElement(name = "ARTICLE_FEATURES")
-public class ArticleFeatures {
 
+@XmlRootElement(name = "ARTICLE_FEATURES")
+@Entity
+public class ArticleFeatures {
+    @Id
+    @GeneratedValue
+    @Column(name = "ARTICLE_FEATURES_ID")
+    @XmlTransient
+    private Long ArticleFeaturesId;
     @XmlElement(name = "REFERENCE_FEATURE_SYSTEM_NAME")
     protected String referencefeaturesystemname;
-    @XmlElements({
-            @XmlElement(name = "REFERENCE_FEATURE_GROUP_ID", type = ReferenceFeatureGroupId.class),
-            @XmlElement(name = "REFERENCE_FEATURE_GROUP_NAME", type = ReferenceFeatureGroupName.class)
-    })
-    @OneToMany
-    protected List<Object> referencefeaturegroupidOrREFERENCEFEATUREGROUPNAME;
-    @XmlElement(name = "FEATURE")
-    @ManyToMany
-    protected List<Feature> feature;
+
+    @XmlElement(name = "REFERENCE_FEATURE_GROUP_ID")
+    protected String referenceFeatureGroupId;
+
+    public String getReferenceFeatureGroupId() {
+        return referenceFeatureGroupId;
+    }
+
+    public void setReferenceFeatureGroupId(String referenceFeatureGroupId) {
+        this.referenceFeatureGroupId = referenceFeatureGroupId;
+    }
+
+    public ArticleFeatures() {
+    }
 
     /**
      * Gets the value of the referencefeaturesystemname property.
@@ -64,59 +68,11 @@ public class ArticleFeatures {
         this.referencefeaturesystemname = value;
     }
 
-    /**
-     * Gets the value of the referencefeaturegroupidOrREFERENCEFEATUREGROUPNAME property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the referencefeaturegroupidOrREFERENCEFEATUREGROUPNAME property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getREFERENCEFEATUREGROUPIDOrREFERENCEFEATUREGROUPNAME().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ReferenceFeatureGroupId }
-     * {@link ReferenceFeatureGroupName }
-     */
-    public List<Object> getREFERENCEFEATUREGROUPIDOrREFERENCEFEATUREGROUPNAME() {
-        if (referencefeaturegroupidOrREFERENCEFEATUREGROUPNAME == null) {
-            referencefeaturegroupidOrREFERENCEFEATUREGROUPNAME = new ArrayList<Object>();
-        }
-        return this.referencefeaturegroupidOrREFERENCEFEATUREGROUPNAME;
+    public Long getArticleFeaturesId() {
+        return ArticleFeaturesId;
     }
 
-    /**
-     * Gets the value of the feature property.
-     * <p>
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the feature property.
-     * <p>
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getFEATURE().add(newItem);
-     * </pre>
-     * <p>
-     * <p>
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Feature }
-     */
-    public List<Feature> getFEATURE() {
-        if (feature == null) {
-            feature = new ArrayList<Feature>();
-        }
-        return this.feature;
+    public void setArticleFeaturesId(Long articleFeaturesId) {
+        ArticleFeaturesId = articleFeaturesId;
     }
-
 }

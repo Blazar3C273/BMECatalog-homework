@@ -8,6 +8,7 @@
 
 package tk.hackspace.dtd.gen;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.xml.bind.annotation.*;
@@ -23,6 +24,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "value"
 })
 @XmlRootElement(name = "SPECIAL_TREATMENT_CLASS")
+@Entity
 public class SpecialTreatmentClass {
     @Id
     @GeneratedValue
@@ -33,6 +35,9 @@ public class SpecialTreatmentClass {
     protected String type;
     @XmlValue
     protected String value;
+
+    public SpecialTreatmentClass() {
+    }
 
     /**
      * Gets the value of the type property.

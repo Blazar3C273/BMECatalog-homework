@@ -8,11 +8,10 @@
 
 package tk.hackspace.dtd.gen;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -28,6 +27,7 @@ import javax.xml.bind.annotation.XmlType;
         "mimeorder"
 })
 @XmlRootElement(name = "MIME")
+@Entity
 public class Mime {
 
     @XmlElement(name = "MIME_TYPE")
@@ -42,6 +42,20 @@ public class Mime {
     protected String mimepurpose;
     @XmlElement(name = "MIME_ORDER")
     protected String mimeorder;
+
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
 
     /**
      * Gets the value of the mimetype property.
@@ -63,11 +77,15 @@ public class Mime {
         this.mimetype = value;
     }
 
+    public Mime() {
+    }
+
     /**
      * Gets the value of the mimesource property.
      *
      * @return possible object is
      * {@link String }
+
      */
     public String getMIMESOURCE() {
         return mimesource;
