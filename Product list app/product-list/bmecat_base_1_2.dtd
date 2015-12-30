@@ -46,7 +46,7 @@
         <!ENTITY % ADDRESS.BUYER "ADDRESS">
         <!ENTITY % ADDRESS.SUPPLIER "ADDRESS">
         <!ENTITY % DATETIME_QUALIFIERS "(generation_date|agreement_start_date|agreement_end_date|valid_start_date|valid_end_date)">
-        <!ENTITY % ADDRESS_QUALIFIERS "(buyer|supplier)">
+        <!ENTITY % ADDRESS_QUALIFIERS "(buyer|testSupplier)">
         <!ENTITY % SUPPLIER_ID_QUALIFIERS "(duns|iln|buyer_specific|supplier_specific)">
         <!ENTITY % BUYER_ID_QUALIFIERS "(duns|iln|buyer_specific|supplier_specific)">
         <!ENTITY % PRICE_FLAG_QUALIFIERS "(incl_freight|incl_packing|incl_assurance|incl_duty)">

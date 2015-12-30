@@ -1,11 +1,15 @@
 package tk.hackspace;
 
 import org.junit.Test;
-import org.junit.internal.runners.JUnit4ClassRunner;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
-import tk.hackspace.dtd.gen.BMEcat;
+import tk.hackspace.models.repos.BMECatRepository;
+import tk.hackspace.models.BMEcat;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
@@ -15,10 +19,14 @@ import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.FileInputStream;
 
-@RunWith(JUnit4ClassRunner.class)
-//@SpringApplicationConfiguration(classes = ProductListApplication.class)
-//@WebAppConfiguration
+import static org.junit.Assert.assertTrue;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = ProductListApplication.class)
+@WebAppConfiguration
 public class ProductListApplicationTests {
+    @Autowired
+    private BMECatRepository bmeCatRepository;
 
     @Test
     public void contextLoads() {
@@ -38,6 +46,8 @@ public class ProductListApplicationTests {
         xr.parse(xmlSource);
 
         BMEcat bmEcat = (BMEcat) unmarshallerHandler.getResult();
+        bmeCatRepository.save(bmEcat);
+
         System.out.println("bmEcat = " + bmEcat);
 
 

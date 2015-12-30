@@ -16,12 +16,12 @@
  See the list of products
  Upload xml
  page to upload the xml
- page to view the products, filter-able per supplier
+ page to view the products, filter-able per testSupplier
  basic but usable interface
  xmls can be very large (> 1M) (нагрузочное тестирование)
  ORM
  H2
- supplier can only upload new catalogs / products that overrides the existing ones
+ testSupplier can only upload new catalogs / products that overrides the existing ones
  product may have more ARTICLE_PRICE and more MIME
  ///-------------------------
  Unit tests
