@@ -8,12 +8,14 @@
 
 package tk.hackspace.models;
 
+
 import org.apache.log4j.Logger;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 
 /**
@@ -26,22 +28,20 @@ import javax.xml.bind.annotation.*;
 @XmlRootElement(name = "T_NEW_CATALOG")
 @Entity
 public class TNewCatalog {
-
-    public void setArticle(List<Article> article) {
-        //article.forEach(article1 -> article1.setCatId());
-        Logger.getLogger(TNewCatalog.class).info("set Article is invoked.");
-        this.article = article;
-
-    }
-
     @XmlElement(name = "ARTICLE")
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    protected List<Article> article;
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 
+    protected List<Article> article;
+    @XmlTransient
+    @Transient
+    private HashMap<Long, Article> articleMap;
     @Id
     @GeneratedValue
     @XmlTransient
     private Long id;
+
+    public TNewCatalog() {
+    }
 
     public Long getId() {
         return id;
@@ -49,10 +49,6 @@ public class TNewCatalog {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-
-    public TNewCatalog() {
     }
 
     /**
@@ -77,12 +73,25 @@ public class TNewCatalog {
      */
     public List<Article> getArticle() {
         if (article == null) {
-            article = new ArrayList<Article>();
+            article = new ArrayList<>();
         }
         return this.article;
     }
 
+    public void setArticle(List<Article> article) {
+        Logger.getLogger(TNewCatalog.class).info("set Article is invoked.");
+        this.article = article;
 
+    }
+
+    public HashMap<Long, Article> getArticlesMap() {
+        if (articleMap == null) {
+            articleMap = new HashMap<Long, Article>() {{
+                getArticle().forEach(article1 -> this.put(article1.getArticle_id(), article1));
+            }};
+        }
+        return articleMap;
+    }
     @Override
     public String toString() {
         return "TNewCatalog{" +

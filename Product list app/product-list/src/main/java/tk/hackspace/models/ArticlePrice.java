@@ -8,11 +8,7 @@
 
 package tk.hackspace.models;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.NormalizedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -48,9 +44,13 @@ public class ArticlePrice {
     protected String lowerbound;
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @XmlTransient
+    @Column(unique = true)
     private Long id;
+
+    public ArticlePrice() {
+    }
 
     public Long getId() {
         return id;
@@ -58,9 +58,6 @@ public class ArticlePrice {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public ArticlePrice() {
     }
 
     /**

@@ -7,26 +7,25 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Random;
+import java.util.Calendar;
 
 
 /**
  * Created by terron on 30.12.15.
  */
 public class XMLReceivr implements Upload.Receiver {
+    Path xmlTmp;
+
     public Path getXmlTmpPath() {
         return xmlTmp;
     }
 
-    Path xmlTmp;
-
     @Override
     public OutputStream receiveUpload(String s, String s1) {
         OutputStream outputStream = null;
-
-        Random random = new Random();
         try {
-            xmlTmp = Files.createTempFile("xmlTmp" + random.nextInt(), s);
+            xmlTmp = Files.createTempFile("xmlTmp" + Calendar.getInstance().getTimeInMillis(), s);
+
             outputStream = Files.newOutputStream(xmlTmp);
 
         } catch (IOException e) {

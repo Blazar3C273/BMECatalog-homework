@@ -8,12 +8,12 @@
 
 package tk.hackspace.models;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -33,14 +33,6 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlRootElement(name = "ARTICLE")
 @Entity
 public class Article {
-    public Article() {
-    }
-
-    @Id
-    @GeneratedValue
-    @XmlTransient
-    @Column(name = "ARTICLE_ID")
-    private Long article_id;
     @XmlAttribute(name = "mode")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     protected String mode;
@@ -61,7 +53,14 @@ public class Article {
     @XmlElement(name = "MIME_INFO")
     @ManyToOne(cascade = CascadeType.ALL)
     protected MimeInfo mimeinfo;
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    @Column(name = "ARTICLE_ID", unique = true)
+    private Long article_id;
 
+    public Article() {
+    }
 
     /**
      * Gets the value of the mode property.
@@ -233,6 +232,10 @@ public class Article {
         return article_id;
     }
 
+    public void setArticle_id(Long article_id) {
+        this.article_id = article_id;
+    }
+
     @Override
     public String toString() {
         return "TestArticle{" +
@@ -245,10 +248,6 @@ public class Article {
                 ", articlepricedetails=" + articlepricedetails +
                 ", mimeinfo=" + mimeinfo +
                 '}';
-    }
-
-    public void setArticle_id(Long article_id) {
-        this.article_id = article_id;
     }
 
 }

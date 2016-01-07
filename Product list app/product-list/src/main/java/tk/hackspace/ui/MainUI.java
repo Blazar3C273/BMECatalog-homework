@@ -22,13 +22,15 @@ import javax.xml.bind.UnmarshallerHandler;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-import java.io.*;
-import java.util.List;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Collection;
 
 
 @SpringUI(path = "/")
 @Theme("tests-valo-dark")
 public class MainUI extends UI {
+    private static final Logger logger = Logger.getLogger(MainUI.class);
     private final BMECatRepository repo;
     private Accordion bmeCatalogListUI;
     private Button searchButton;
@@ -39,22 +41,23 @@ public class MainUI extends UI {
     private Panel currentArticlePanel;
     private Accordion articleListUI;
     private Button filterArticleButton;
-    private static final Logger logger = Logger.getLogger(MainUI.class);
     private Upload upload;
-    @Override
-    protected void init(VaadinRequest vaadinRequest) {
-        initComponets();
-        buildLayout();
-    }
 
     @Autowired
     public MainUI(BMECatRepository bmeCatRepo) {
         this.repo = bmeCatRepo;
     }
 
+    @Override
+    protected void init(VaadinRequest vaadinRequest) {
+        initComponets();
+        buildLayout();
+    }
+
     private void updateCatalogList() {
         if (bmeCatalogListUI != null) {
             bmeCatalogListUI.removeAllComponents();
+            articleListUI.removeAllComponents();
             repo.findAll().forEach(cat -> bmeCatalogListUI.addTab(new BmeCatTab(cat), cat.getHeader().getSupplier().getSupplierName()));
             bmeCatalogListUI.setSelectedTab(0);
         }
@@ -76,8 +79,7 @@ public class MainUI extends UI {
             xmlSource = new InputSource(xmlStream);
             xr.parse(xmlSource);
             bmEcat = (BMEcat) unmarshallerHandler.getResult();
-            repo.save(bmEcat);
-            repo.flush();
+            repo.saveAndFlush(bmEcat);
             xmlStream.close();
             updateCatalogList();
         } catch (IOException e) {
@@ -204,10 +206,10 @@ public class MainUI extends UI {
         //Choosing catalog
         bmeCatalogListUI.addSelectedTabChangeListener(listener -> {
             articleListUI.removeAllComponents();
-            List<Article> articleList =
-                    ((BmeCatTab) listener.getTabSheet().getSelectedTab()).getBmEcat().getTNEWCATALOG().getArticle();
+            Collection<Article> articleList =
+                    ((BmeCatTab) listener.getTabSheet().getSelectedTab()).getBmEcat().getTNEWCATALOG().getArticlesMap().values();
 
-            articleList.forEach(article ->
+            articleList.forEach((article) ->
                     articleListUI.addTab(new BreafArticleTab(article), article.getARTICLEDETAILS().getDESCRIPTIONSHORT()));
         });
 
